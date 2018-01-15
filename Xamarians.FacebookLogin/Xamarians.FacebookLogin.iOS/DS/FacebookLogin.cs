@@ -48,7 +48,7 @@ namespace Xamarians.FacebookLogin.iOS.DS
 						var email = userInfo["email"].ToString();
 						tcs.SetResult(new FbLoginResult
 						{
-							AccessToken = result.Token.ToString(),
+							AccessToken = result.Token.TokenString.ToString(),
 							UserId = id,
 							Name = name,
 							Email = email,
